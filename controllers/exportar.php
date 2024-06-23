@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
             // Crear el documento a partir de la plantilla
             $templateProcessor = new TemplateProcessor('../static/template.docx');
 
-            // Rellenar la plantilla con los datos del comité
+            // Rellenar la plantilla con los datos del comités
             $templateProcessor->setValue('Acta_Num', $comite['Acta_Num']);
             $templateProcessor->setValue('Nombre', $comite['Nombre']);
             $templateProcessor->setValue('Fecha', $comite['Fecha']);
